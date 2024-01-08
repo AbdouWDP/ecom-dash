@@ -1,38 +1,33 @@
-.App {
-  text-align: center;
+.order-list {
+  list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.aside ul li {
+  cursor: pointer;
+}
+.aside li.active,
+.aside ul li:hover {
+  background-color: #eee;
+}
+.main {
+  height: calc(100vh - 60px);
+}
+.dashbord-table thead tr,
+.dashbord-table tbody tr {
+  height: 50px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#add-product-form input {
+  appearance: textfield;
+  height: 35px;
+  outline: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-close {
+  width: 30px !important;
+  height: 30px !important;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-close:hover {
+  background-color: #333;
+  color: #eee;
+  border-radius: 50%;
 }
